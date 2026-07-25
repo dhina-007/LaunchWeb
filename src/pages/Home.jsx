@@ -194,27 +194,38 @@ export function Home() {
           <SectionHeading
             eyebrow="Our Work"
             title="Selected Live Projects"
-            description="Real production work — portfolios and an LMS platform built with modern stacks and careful UX."
+            description="Real production work — portfolios, landing pages, an LMS platform, and business apps built with modern stacks and careful UX."
           />
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {works.map((work) => (
               <button
                 key={work.id}
                 type="button"
                 onClick={() => setActiveWork(work)}
-                className="min-h-[220px] w-full rounded-3xl border border-line bg-white p-5 text-left transition duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"
+                className="overflow-hidden rounded-3xl border border-line bg-white text-left transition duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"
               >
-                <div className="flex items-start justify-between gap-3">
-                  <span className="rounded-full bg-slate px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-blue">
-                    {work.category}
-                  </span>
-                  <ArrowUpRight className="h-4 w-4 text-muted" />
+                <div className="relative h-36 overflow-hidden bg-slate">
+                  <img
+                    src={work.image}
+                    alt={work.imageAlt}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent" />
                 </div>
-                <h3 className="mt-5 font-display text-2xl font-semibold">{work.name}</h3>
-                <p className="mt-2 text-xs font-medium uppercase tracking-[0.12em] text-muted">
-                  {work.type}
-                </p>
-                <p className="mt-3 text-sm leading-relaxed text-muted">{work.summary}</p>
+                <div className="p-5">
+                  <div className="flex items-start justify-between gap-3">
+                    <span className="rounded-full bg-slate px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-blue">
+                      {work.category}
+                    </span>
+                    <ArrowUpRight className="h-4 w-4 text-muted" />
+                  </div>
+                  <h3 className="mt-4 font-display text-2xl font-semibold">{work.name}</h3>
+                  <p className="mt-2 text-xs font-medium uppercase tracking-[0.12em] text-muted">
+                    {work.type}
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted">{work.summary}</p>
+                </div>
               </button>
             ))}
           </div>
