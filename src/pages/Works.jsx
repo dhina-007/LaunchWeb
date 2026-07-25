@@ -5,7 +5,7 @@ import { WorkModal } from '../components/WorkModal'
 import { Button } from '../components/Button'
 import { works } from '../data/content'
 
-const categories = ['All', 'Portfolio', 'Education']
+const categories = ['All', 'Portfolio', 'Education', 'Business', 'Landing']
 
 export function Works() {
   const [filter, setFilter] = useState('All')
@@ -22,7 +22,7 @@ export function Works() {
         <SectionHeading
           eyebrow="Our Works"
           title="Selected Live Projects"
-          description="Real websites we've designed and developed — portfolios and an LMS platform, live in production."
+          description="Real websites we've designed and developed — portfolios, landing pages, an LMS platform, and business apps, live in production."
         />
 
         <div className="mt-10 flex flex-wrap gap-2">
@@ -42,15 +42,23 @@ export function Works() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((work) => (
             <button
               key={work.id}
               type="button"
               onClick={() => setActiveWork(work)}
-              className="overflow-hidden rounded-3xl border border-line bg-white text-left transition duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"
+              className="group overflow-hidden rounded-3xl border border-line bg-white text-left transition duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"
             >
-              <div className="h-28 brand-gradient opacity-90" />
+              <div className="relative h-40 overflow-hidden bg-slate">
+                <img
+                  src={work.image}
+                  alt={work.imageAlt}
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/35 to-transparent" />
+              </div>
               <div className="p-5">
                 <div className="flex items-start justify-between gap-3">
                   <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-blue">
