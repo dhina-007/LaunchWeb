@@ -1,56 +1,55 @@
 import { useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 import { faqs } from '../data/content'
 import { SectionHeading } from './Section'
 
 export function FAQ() {
-  const [open, setOpen] = useState(0)
+  const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section className="bg-slate py-20 sm:py-24">
-      <div className="container-page grid gap-12 lg:grid-cols-[0.9fr_1.2fr]">
+    <section className="py-20 sm:py-28 border-t border-[#E2E8F0] bg-[#F8FAFC]">
+      <div className="container-page">
         <SectionHeading
-          eyebrow="FAQ"
-          title="Questions, answered clearly."
-          description="Straightforward answers for teams planning their first premium website — or a thoughtful redesign."
+          eyebrow="Frequently Asked Questions"
+          title="Everything You Need to Know"
+          description="Clear answers about our development process, timelines, technology stack, and ongoing support."
         />
-        <div className="space-y-3">
-          {faqs.map((item, index) => {
-            const isOpen = open === index
+
+        <div className="mt-12 max-w-3xl space-y-3">
+          {faqs.map((faq, index) => {
+            const isOpen = openIndex === index
             return (
               <div
-                key={item.q}
-                className="rounded-2xl border border-line bg-white overflow-hidden"
+                key={faq.q}
+                className="overflow-hidden rounded-2xl border border-[#E2E8F0] bg-white shadow-xs transition-colors"
               >
                 <button
                   type="button"
-                  className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
-                  onClick={() => setOpen(isOpen ? -1 : index)}
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  className="flex w-full items-center justify-between p-6 text-left font-display text-lg font-semibold text-[#0F172A] hover:text-[#4F46E5] transition-colors"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-display text-lg font-semibold text-navy">
-                    {item.q}
-                  </span>
+                  <span>{faq.q}</span>
                   <ChevronDown
-                    className={`h-5 w-5 shrink-0 text-muted transition-transform ${
-                      isOpen ? 'rotate-180' : ''
+                    className={`h-5 w-5 text-[#475569] transition-transform duration-300 ${
+                      isOpen ? 'rotate-180 text-[#4F46E5]' : ''
                     }`}
                   />
                 </button>
                 <AnimatePresence initial={false}>
-                  {isOpen ? (
+                  {isOpen && (
                     <motion.div
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.28 }}
+                      transition={{ duration: 0.25 }}
                     >
-                      <p className="px-5 pb-5 text-sm leading-relaxed text-muted">
-                        {item.a}
-                      </p>
+                      <div className="px-6 pb-6 text-sm leading-relaxed text-[#475569] border-t border-[#E2E8F0] pt-4">
+                        {faq.a}
+                      </div>
                     </motion.div>
-                  ) : null}
+                  )}
                 </AnimatePresence>
               </div>
             )

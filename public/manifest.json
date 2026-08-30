@@ -1,0 +1,16 @@
+{
+  "short_name": "LunchWeb",
+  "name": "LunchWeb | Web Design, Software & Digital Solutions",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0A0A0A",
+  "theme_color": "#0A0A0A",
+  "display": "standalone",
+  "orientation": "portrait"
+}

@@ -8,7 +8,7 @@ export function Layout() {
   const location = useLocation()
 
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#0F172A]">
       <ScrollToTop />
       <Navbar />
       <AnimatePresence mode="wait">

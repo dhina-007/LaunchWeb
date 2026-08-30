@@ -1,37 +1,36 @@
 import { Link } from 'react-router-dom'
 
-export function Logo({ size = 'md', showWordmark = true }) {
-  const mark =
-    size === 'lg'
-      ? 'h-16 w-16 sm:h-20 sm:w-20'
-      : size === 'sm'
-        ? 'h-9 w-9'
-        : 'h-10 w-10'
+export function Logo({ size = 'md', className = '' }) {
+  const isSm = size === 'sm'
 
-  const word =
-    size === 'lg'
-      ? 'text-3xl sm:text-4xl'
-      : size === 'sm'
-        ? 'text-lg'
-        : 'text-xl'
+  const imgHeight = {
+    sm: 'h-10 sm:h-12',
+    md: 'h-12 sm:h-14 lg:h-16',
+    lg: 'h-16 sm:h-20',
+  }
+
+  const textSize = {
+    sm: 'text-xl sm:text-2xl',
+    md: 'text-2xl sm:text-3xl',
+    lg: 'text-3xl sm:text-4xl',
+  }
 
   return (
-    <Link to="/" className="inline-flex items-center gap-3 group" aria-label="Launch Web home">
-      <span
-        className={`${mark} relative overflow-hidden rounded-xl shadow-[0_8px_24px_rgba(46,91,255,0.16)] ring-1 ring-black/5`}
-      >
-        <img
-          src="/logo.png"
-          alt=""
-          className="h-full w-full object-cover object-[center_8%] scale-[1.35]"
-          loading="eager"
-        />
-      </span>
-      {showWordmark ? (
-        <span className={`font-display font-bold tracking-tight text-navy ${word}`}>
-          Launch <span className="gradient-text">Web</span>
+    <Link
+      to="/"
+      className={`group inline-flex items-center gap-3 font-display font-bold tracking-tight text-[#0F172A] transition-opacity hover:opacity-90 ${className}`}
+    >
+      <img
+        src="/logo.png"
+        alt="Lunch Web Logo"
+        className={`w-auto object-contain transition-transform duration-300 group-hover:scale-105 ${imgHeight[size] || imgHeight.md}`}
+      />
+      
+      <div className="flex flex-col">
+        <span className={`font-display font-extrabold text-[#0F172A] tracking-tight leading-none ${textSize[size] || textSize.md}`}>
+          Lunch <span className="bg-gradient-to-r from-[#4F46E5] via-[#6366F1] to-[#2563EB] bg-clip-text text-transparent">Web</span>
         </span>
-      ) : null}
+      </div>
     </Link>
   )
 }

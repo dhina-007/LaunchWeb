@@ -1,59 +1,107 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --color-navy: #0b132b;
-  --color-navy-soft: #151d38;
-  --color-purple: #7a36ff;
-  --color-blue: #2e5bff;
-  --color-cyan: #00d2ff;
-  --color-slate: #f8fafc;
-  --color-muted: #64748b;
-  --color-line: #e2e8f0;
-  --shadow-soft: 0 20px 50px rgba(11, 19, 43, 0.06);
-  --shadow-card: 0 12px 40px rgba(11, 19, 43, 0.08);
+  
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F8FAFC;
+  --color-card-bg: #FFFFFF;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #475569;
+  --color-border-subtle: #E2E8F0;
+  --color-accent-indigo: #4F46E5;
+  --color-accent-blue: #2563EB;
+  --color-status-success: #16A34A;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
+    color-scheme: light;
+    background-color: #F8FAFC;
   }
 
   body {
-    @apply bg-white text-navy font-sans antialiased;
+    background-color: #F8FAFC;
+    color: #0F172A;
+    font-family: var(--font-sans);
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
   ::selection {
-    background: rgba(46, 91, 255, 0.18);
+    background-color: rgba(79, 70, 229, 0.15);
+    color: #4F46E5;
   }
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    @apply font-display tracking-tight;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
   }
 }
 
+/* Custom Utilities & Components */
 @layer utilities {
-  .gradient-text {
-    background: linear-gradient(115deg, #7a36ff 0%, #2e5bff 48%, #00d2ff 100%);
+  .gradient-indigo-blue {
+    background: linear-gradient(135deg, #4F46E5 0%, #2563EB 100%);
+  }
+
+  .gradient-text-indigo {
+    background: linear-gradient(135deg, #0F172A 30%, #4F46E5 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
 
-  .brand-gradient {
-    background: linear-gradient(115deg, #7a36ff 0%, #2e5bff 48%, #00d2ff 100%);
+  .glass-light {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+  }
+
+  .glass-card-light {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
   }
 
   .container-page {
-    @apply mx-auto w-[min(100%-2rem,1140px)] sm:w-[min(100%-3rem,1140px)];
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
+  
+  @media (min-width: 640px) {
+    .container-page {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
 
-  .glass {
-    @apply border border-white/60 bg-white/70 backdrop-blur-xl;
-  }
+/* Custom Scrollbar for Light Professional Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
 }
