@@ -13,13 +13,13 @@ export function Services() {
     serviceType: 'Web Design & Development Services',
     provider: {
       '@type': 'ProfessionalService',
-      name: 'LunchWeb',
-      url: 'https://lunchweb.onrender.com/',
+      name: 'LaunchWeb',
+      url: 'https://launchweb.onrender.com/',
     },
     areaServed: 'Worldwide',
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'LunchWeb Services Catalog',
+      name: 'LaunchWeb Services Catalog',
       itemListElement: services.map((s, idx) => ({
         '@type': 'Offer',
         itemOffered: {
@@ -35,10 +35,10 @@ export function Services() {
   return (
     <>
       <SEO
-        title="Web Design &amp; Development Services | LunchWeb"
-        description="LunchWeb designs and develops modern, responsive websites, custom software, and digital solutions for businesses that want a stronger digital presence."
+        title="Web Design &amp; Development Services | LaunchWeb"
+        description="LaunchWeb designs and develops modern, responsive websites, custom software, and digital solutions for businesses that want a stronger digital presence."
         keywords="Web Design Services, Custom Software Development, Business Website Development, Web Application Development, UI/UX Design, E-Commerce Solutions"
-        canonicalUrl="https://lunchweb.onrender.com/services"
+        canonicalUrl="https://launchweb.onrender.com/services"
         schemaJson={serviceSchema}
       />
 

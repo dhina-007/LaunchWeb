@@ -48,10 +48,10 @@ export function Home() {
   return (
     <>
       <SEO
-        title="LunchWeb | Web Design, Software & Digital Solutions"
-        description="LunchWeb builds modern websites, custom software and digital solutions that help businesses establish a stronger digital presence and grow online."
+        title="LaunchWeb | Web Design, Software & Digital Solutions"
+        description="LaunchWeb builds modern websites, custom software and digital solutions that help businesses establish a stronger digital presence and grow online."
         keywords="Web Design Company, Web Development Company, Website Development, Custom Software Development, Web Design Services, Software Development Services, Digital Solutions, Custom Web Applications, Responsive Web Design"
-        canonicalUrl="https://lunchweb.onrender.com/"
+        canonicalUrl="https://launchweb.onrender.com/"
         schemaJson={faqSchema}
       />
 
@@ -91,7 +91,7 @@ export function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-[#475569]"
             >
-              LunchWeb designs and develops modern websites, custom software and digital solutions that help businesses look professional, work smarter and grow online.
+              LaunchWeb designs and develops modern websites, custom software and digital solutions that help businesses look professional, work smarter and grow online.
             </motion.p>
 
             <motion.div
@@ -187,11 +187,11 @@ export function Home() {
         </div>
       </section>
 
-      {/* 4. WHY LUNCHWEB */}
+      {/* 4. WHY LAUNCHWEB */}
       <section className="border-y border-[#E2E8F0] bg-white py-20 sm:py-28">
         <div className="container-page">
           <SectionHeading
-            eyebrow="Why Choose LunchWeb"
+            eyebrow="Why Choose LaunchWeb"
             title="More Than a Website. A Digital Foundation for Your Business."
             description="We partner with local businesses, startups, and growing enterprises to craft technology solutions built for longevity."
           />
@@ -261,7 +261,7 @@ export function Home() {
             <SectionHeading
               eyebrow="Selected Work"
               title="Work Built for Real Business."
-              description="Explore live websites, custom healthcare platforms, learning management tools, and business web applications shipped by LunchWeb."
+              description="Explore live websites, custom healthcare platforms, learning management tools, and business web applications shipped by LaunchWeb."
             />
             <Button to="/works" variant="secondary">
               View All Projects →
@@ -278,7 +278,7 @@ export function Home() {
               <div className="md:col-span-7 relative h-72 sm:h-96 overflow-hidden bg-white">
                 <img
                   src={featuredWork.image}
-                  alt="Sri Sai Clinic business website designed by LunchWeb"
+                  alt="Sri Sai Clinic business website designed by LaunchWeb"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   width="1200"
                   height="800"
@@ -336,7 +336,7 @@ export function Home() {
                 <div className="relative h-44 overflow-hidden bg-white">
                   <img
                     src={work.image}
-                    alt={`${work.name} project developed by LunchWeb`}
+                    alt={`${work.name} project developed by LaunchWeb`}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                     width="600"
@@ -392,14 +392,14 @@ export function Home() {
         </div>
       </section>
 
-      {/* 8. ABOUT LUNCHWEB */}
+      {/* 8. ABOUT LAUNCHWEB */}
       <section className="border-t border-[#E2E8F0] bg-white py-20 sm:py-28">
         <div className="container-page grid items-center gap-12 lg:grid-cols-12">
           <div className="lg:col-span-7 space-y-6">
             <SectionHeading
-              eyebrow="About LunchWeb"
+              eyebrow="About LaunchWeb"
               title="Technology That Solves Real Business Problems."
-              description="LunchWeb was founded to bridge the gap between creative UI design and robust software engineering. We believe every business deserves a web presence that builds trust from the first second."
+              description="LaunchWeb was founded to bridge the gap between creative UI design and robust software engineering. We believe every business deserves a web presence that builds trust from the first second."
             />
             <p className="text-sm leading-relaxed text-[#475569]">
               Whether you are a local clinic, an e-commerce shop, or a growing startup needing custom portal software, we write clean, maintainable code designed to perform under real traffic.

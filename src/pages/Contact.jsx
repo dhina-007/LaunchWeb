@@ -9,19 +9,19 @@ export function Contact() {
   const contactSchema = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    name: 'Contact LunchWeb',
-    description: 'Get in touch with LunchWeb for custom web design, software development, and digital solutions.',
-    url: 'https://lunchweb.onrender.com/contact',
+    name: 'Contact LaunchWeb',
+    description: 'Get in touch with LaunchWeb for custom web design, software development, and digital solutions.',
+    url: 'https://launchweb.onrender.com/contact',
     mainEntity: {
       '@type': 'ProfessionalService',
-      name: 'LunchWeb',
+      name: 'LaunchWeb',
       telephone: '+919585523658',
       email: 'launchwebservice@gmail.com',
-      url: 'https://lunchweb.onrender.com/',
+      url: 'https://launchweb.onrender.com/',
       sameAs: [
         company.instagram,
         company.linkedin,
-        'https://lunchweb.onrender.com/'
+        'https://launchweb.onrender.com/'
       ]
     },
   }
@@ -29,10 +29,10 @@ export function Contact() {
   return (
     <>
       <SEO
-        title="Contact LunchWeb | Start Your Web &amp; Software Project"
-        description="Contact LunchWeb for web design, custom software development, or digital solution inquiries. Reach us by project form, phone, LinkedIn, Instagram or instant WhatsApp."
-        keywords="Contact LunchWeb, Web design inquiry, Hire web developers, Software development contact, Get project quote"
-        canonicalUrl="https://lunchweb.onrender.com/contact"
+        title="Contact LaunchWeb | Start Your Web &amp; Software Project"
+        description="Contact LaunchWeb for web design, custom software development, or digital solution inquiries. Reach us by project form, phone, LinkedIn, Instagram or instant WhatsApp."
+        keywords="Contact LaunchWeb, Web design inquiry, Hire web developers, Software development contact, Get project quote"
+        canonicalUrl="https://launchweb.onrender.com/contact"
         schemaJson={contactSchema}
       />
 
@@ -46,7 +46,7 @@ export function Contact() {
               Let's Build Something Great Together.
             </h1>
             <p className="text-base sm:text-lg leading-relaxed text-[#475569]">
-              Have a project question or ready to start? Reach out to LunchWeb through our enquiry form or direct channels below.
+              Have a project question or ready to start? Reach out to LaunchWeb through our enquiry form or direct channels below.
             </p>
           </div>
 

@@ -1,16 +1,16 @@
 export const company = {
-  name: 'LunchWeb',
+  name: 'LaunchWeb',
   tagline: 'Web Design • Software • Digital Solutions',
   email: 'launchwebservice@gmail.com',
   phones: [
     { label: '+91 95855 23658', href: 'tel:+919585523658', clean: '+919585523658' },
     { label: '+91 90251 02679', href: 'tel:+919025102679', clean: '+919025102679' },
   ],
-  whatsapp: 'https://wa.me/919025102679?text=Hello%20LunchWeb%20team,%20I%20would%20like%20to%20discuss%20a%20project.',
+  whatsapp: 'https://wa.me/919025102679?text=Hello%20LaunchWeb%20team,%20I%20would%20like%20to%20discuss%20a%20project.',
   instagram: 'https://www.instagram.com/launch____web/',
   instagramHandle: '@launch____web',
-  linkedin: 'https://www.linkedin.com/company/lunchweb',
-  linkedinHandle: 'LunchWeb on LinkedIn',
+  linkedin: 'https://www.linkedin.com/company/launchweb',
+  linkedinHandle: 'LaunchWeb on LinkedIn',
   location: 'Remote-first — Serving clients worldwide',
   founded: '2024',
 }
@@ -338,7 +338,7 @@ export const faqs = [
     a: 'Most business websites take between 2 to 4 weeks, while complex web applications take 4 to 8 weeks depending on custom feature requirements.',
   },
   {
-    q: 'Can LunchWeb redesign my existing website?',
+    q: 'Can LaunchWeb redesign my existing website?',
     a: 'Yes. We specialize in modernizing outdated websites into sleek, high-performing digital products while keeping your existing domain and SEO equity.',
   },
   {

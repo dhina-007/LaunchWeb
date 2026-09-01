@@ -8,24 +8,24 @@ export function About() {
   const aboutSchema = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    name: 'About LunchWeb',
-    description: 'LunchWeb is a digital solutions studio bridging modern UI design and full-stack software engineering.',
-    url: 'https://lunchweb.onrender.com/about',
+    name: 'About LaunchWeb',
+    description: 'LaunchWeb is a digital solutions studio bridging modern UI design and full-stack software engineering.',
+    url: 'https://launchweb.onrender.com/about',
     publisher: {
       '@type': 'Organization',
-      name: 'LunchWeb',
-      url: 'https://lunchweb.onrender.com/',
-      logo: 'https://lunchweb.onrender.com/logo.png',
+      name: 'LaunchWeb',
+      url: 'https://launchweb.onrender.com/',
+      logo: 'https://launchweb.onrender.com/logo.png',
     },
   }
 
   return (
     <>
       <SEO
-        title="About LunchWeb | Technology &amp; Digital Solutions Studio"
-        description="Learn how LunchWeb bridges modern UI design and custom software engineering to build fast, responsive digital foundations for growing businesses."
-        keywords="About LunchWeb, Web design studio, Custom software studio, Tech solutions partner, Web engineering"
-        canonicalUrl="https://lunchweb.onrender.com/about"
+        title="About LaunchWeb | Technology &amp; Digital Solutions Studio"
+        description="Learn how LaunchWeb bridges modern UI design and custom software engineering to build fast, responsive digital foundations for growing businesses."
+        keywords="About LaunchWeb, Web design studio, Custom software studio, Tech solutions partner, Web engineering"
+        canonicalUrl="https://launchweb.onrender.com/about"
         schemaJson={aboutSchema}
       />
 
@@ -34,13 +34,13 @@ export function About() {
           {/* Main Header */}
           <div className="max-w-3xl space-y-6">
             <span className="inline-flex items-center gap-2 rounded-full border border-[#E2E8F0] bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#4F46E5] shadow-xs">
-              About LunchWeb
+              About LaunchWeb
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-[#0F172A] leading-tight">
               Technology That Solves Real Business Problems.
             </h1>
             <p className="text-base sm:text-lg text-[#475569] leading-relaxed">
-              LunchWeb designs and develops modern websites, custom software and digital solutions that help businesses look professional, work smarter and grow online.
+              LaunchWeb designs and develops modern websites, custom software and digital solutions that help businesses look professional, work smarter and grow online.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export function About() {
                 Built on Technical Craft &amp; Business Clarity
               </h2>
               <p className="text-sm leading-relaxed text-[#475569]">
-                We avoid generic template shortcuts and bloated website builders. Every product crafted by LunchWeb is built with clean HTML, modern JavaScript/React, and enterprise Java Spring Boot backend infrastructure where required.
+                We avoid generic template shortcuts and bloated website builders. Every product crafted by LaunchWeb is built with clean HTML, modern JavaScript/React, and enterprise Java Spring Boot backend infrastructure where required.
               </p>
               <p className="text-sm leading-relaxed text-[#475569]">
                 Our approach prioritizes high speed, crisp mobile responsiveness, SEO foundations, and bulletproof accessibility across all devices.
@@ -98,45 +98,57 @@ export function About() {
                   key={item.title}
                   className="rounded-3xl border border-[#E2E8F0] bg-white p-8 space-y-3 shadow-xs"
                 >
-                  <span className="font-mono text-sm font-bold text-[#4F46E5]">{item.number}</span>
-                  <h3 className="font-display text-xl font-bold text-[#0F172A]">{item.title}</h3>
-                  <p className="text-sm leading-relaxed text-[#475569]">{item.text}</p>
+                  <span className="font-mono text-xs font-bold text-[#4F46E5]">
+                    {item.number}
+                  </span>
+                  <h3 className="font-display text-xl font-bold text-[#0F172A]">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-[#475569]">
+                    {item.text}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Technology Grid */}
-          <div className="rounded-3xl border border-[#E2E8F0] bg-white p-8 sm:p-12 space-y-8 shadow-xs">
-            <div>
-              <h2 className="font-display text-2xl font-bold text-[#0F172A]">
-                Technologies We Master
-              </h2>
-              <p className="mt-2 text-sm text-[#475569]">
-                Only standard, industry-proven stacks implemented with high performance targets.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+          {/* Tech Stack Showcase */}
+          <div>
+            <SectionHeading
+              eyebrow="Technology Stack"
+              title="Modern Tools Built for Performance"
+              description="We choose technologies designed for security, high speed, and seamless maintainability."
+            />
+            <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {techStack.map((tech) => (
-                <div key={tech.name} className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] p-4">
-                  <h3 className="font-display text-base font-bold text-[#0F172A]">{tech.name}</h3>
-                  <p className="text-xs text-[#475569] mt-1">{tech.desc}</p>
+                <div
+                  key={tech.name}
+                  className="rounded-2xl border border-[#E2E8F0] bg-white p-5 space-y-1.5 shadow-xs"
+                >
+                  <h3 className="font-display text-base font-bold text-[#0F172A]">
+                    {tech.name}
+                  </h3>
+                  <p className="text-xs text-[#475569]">
+                    {tech.desc}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* CTA */}
-          <div className="text-center max-w-xl mx-auto space-y-6">
-            <h2 className="font-display text-3xl font-extrabold text-[#0F172A]">
-              Ready to Work Together?
+          {/* Bottom CTA Callout */}
+          <div className="rounded-3xl border border-[#E2E8F0] bg-gradient-to-r from-[#4F46E5]/10 via-white to-[#2563EB]/10 p-8 sm:p-12 text-center space-y-4 shadow-xl shadow-slate-900/5">
+            <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-[#0F172A]">
+              Ready to Upgrade Your Digital Presence?
             </h2>
-            <p className="text-sm text-[#475569]">
-              Let's discuss how LunchWeb can design and engineer your next digital solution.
+            <p className="text-sm sm:text-base text-[#475569] max-w-xl mx-auto leading-relaxed">
+              Partner with LaunchWeb to build a modern, trustworthy, high-performing website or custom software application for your business.
             </p>
-            <Button to="/contact" size="lg">
-              Start a Project
-            </Button>
+            <div className="pt-2 flex justify-center gap-4">
+              <Button to="/contact">
+                Start Your Project
+              </Button>
+            </div>
           </div>
         </div>
       </div>

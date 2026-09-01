@@ -21,7 +21,7 @@ export function Works() {
   const worksSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'LunchWeb Portfolio Projects',
+    name: 'LaunchWeb Portfolio Projects',
     itemListElement: works.map((w, idx) => ({
       '@type': 'ListItem',
       position: idx + 1,
@@ -29,7 +29,7 @@ export function Works() {
         '@type': 'CreativeWork',
         name: w.name,
         description: w.summary,
-        url: w.url || 'https://lunchweb.onrender.com/works',
+        url: w.url || 'https://launchweb.onrender.com/works',
         image: w.image,
       },
     })),
@@ -43,10 +43,10 @@ export function Works() {
   return (
     <>
       <SEO
-        title="Selected Projects &amp; Case Studies | LunchWeb"
-        description="Explore real production websites, Sri Sai Clinic healthcare portal, LMS platforms, and custom software web applications designed and developed by LunchWeb."
-        keywords="Sri Sai Clinic website, LunchWeb projects, Web development portfolio, React web apps, Custom software showcase"
-        canonicalUrl="https://lunchweb.onrender.com/works"
+        title="Selected Projects &amp; Case Studies | LaunchWeb"
+        description="Explore real production websites, Sri Sai Clinic healthcare portal, LMS platforms, and custom software web applications designed and developed by LaunchWeb."
+        keywords="Sri Sai Clinic website, LaunchWeb projects, Web development portfolio, React web apps, Custom software showcase"
+        canonicalUrl="https://launchweb.onrender.com/works"
         schemaJson={worksSchema}
       />
 
@@ -60,7 +60,7 @@ export function Works() {
               Our Works &amp; Live Projects
             </h1>
             <p className="text-base sm:text-lg leading-relaxed text-[#475569]">
-              Explore real production websites, healthcare management portals, e-learning platforms, and custom business applications shipped by LunchWeb.
+              Explore real production websites, healthcare management portals, e-learning platforms, and custom business applications shipped by LaunchWeb.
             </p>
           </div>
 
@@ -71,10 +71,10 @@ export function Works() {
                 key={category}
                 type="button"
                 onClick={() => setFilter(category)}
-                className={`rounded-full px-5 py-2 text-xs font-semibold tracking-wide transition-all duration-200 ${
+                className={`rounded-full px-4 py-2 text-xs font-semibold transition-all ${
                   filter === category
-                    ? 'bg-gradient-to-r from-[#4F46E5] to-[#2563EB] text-white shadow-md shadow-indigo-500/20'
-                    : 'border border-[#E2E8F0] bg-white text-[#475569] hover:text-[#0F172A] hover:border-[#CBD5E1] shadow-2xs'
+                    ? 'bg-[#4F46E5] text-white shadow-md'
+                    : 'bg-white border border-[#E2E8F0] text-[#475569] hover:border-[#4F46E5] hover:text-[#0F172A]'
                 }`}
               >
                 {category}
@@ -82,8 +82,8 @@ export function Works() {
             ))}
           </div>
 
-          {/* Projects Grid */}
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Works Grid */}
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {filtered.map((work) => (
               <button
                 key={work.id}
@@ -94,19 +94,13 @@ export function Works() {
                 <div className="relative h-48 overflow-hidden bg-[#F8FAFC]">
                   <img
                     src={work.image}
-                    alt={`${work.name} project designed by LunchWeb`}
+                    alt={work.imageAlt || work.name}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                     width="600"
                     height="400"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-white via-white/30 to-transparent" />
-                  
-                  {work.id === 'sri-sai-clinic' && (
-                    <span className="absolute top-3 left-3 rounded-full bg-[#4F46E5] px-2.5 py-1 text-[10px] font-bold text-white shadow-xs">
-                      Healthcare Live Project
-                    </span>
-                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent" />
                 </div>
                 <div className="p-6 space-y-3">
                   <div className="flex items-center justify-between">
@@ -133,21 +127,21 @@ export function Works() {
           {/* Bottom Callout Banner */}
           <div className="mt-16 rounded-3xl border border-[#E2E8F0] bg-white p-8 sm:p-12 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between shadow-xl shadow-slate-900/5">
             <div>
-              <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-[#0F172A]">
-                Want your project showcased next?
+              <h2 className="font-display text-2xl font-bold text-[#0F172A]">
+                Have a Project Scope in Mind?
               </h2>
-              <p className="mt-2 text-sm text-[#475569]">
-                Let's collaborate to design and develop your custom web solution.
+              <p className="text-xs sm:text-sm text-[#475569] mt-1 max-w-lg">
+                Let's discuss how LaunchWeb can design and engineer a custom digital product tailored to your business needs.
               </p>
             </div>
             <Button to="/contact" variant="primary">
-              Start a Conversation
+              Start Your Project
             </Button>
           </div>
         </div>
-
-        <WorkModal work={activeWork} onClose={() => setActiveWork(null)} />
       </div>
+
+      <WorkModal work={activeWork} onClose={() => setActiveWork(null)} />
     </>
   )
 }

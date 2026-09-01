@@ -5,9 +5,9 @@ export function NotFound() {
   return (
     <>
       <SEO
-        title="404 - Page Not Found | LunchWeb"
-        description="The page you are looking for does not exist on LunchWeb. Return to our homepage to explore our web design, software development, and digital solutions."
-        canonicalUrl="https://lunchweb.onrender.com/404"
+        title="404 - Page Not Found | LaunchWeb"
+        description="The page you are looking for does not exist on LaunchWeb. Return to our homepage to explore our web design, software development, and digital solutions."
+        canonicalUrl="https://launchweb.onrender.com/404"
       />
 
       <div className="pt-32 pb-24 sm:pt-40 sm:pb-32 bg-[#F8FAFC] text-[#0F172A] min-h-[70vh] flex items-center justify-center text-center">

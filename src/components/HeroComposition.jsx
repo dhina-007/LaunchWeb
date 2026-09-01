@@ -23,7 +23,7 @@ export function HeroComposition() {
           </div>
           <div className="flex items-center gap-2 rounded-lg border border-[#E2E8F0] bg-white px-3 py-1 text-[11px] font-mono text-[#475569] shadow-2xs">
             <span className="text-[#16A34A] font-semibold">https://</span>
-            <span className="text-[#0F172A]">lunchweb.app/demo</span>
+            <span className="text-[#0F172A]">launchweb.app/demo</span>
           </div>
           <div className="flex items-center gap-1.5">
             <span className="h-2 w-2 rounded-full bg-[#16A34A] animate-pulse" />
@@ -81,7 +81,7 @@ export function HeroComposition() {
           {/* Interactive Code Preview Block */}
           <div className="rounded-xl border border-[#E2E8F0] bg-[#0F172A] p-3 font-mono text-[11px] leading-relaxed text-[#94A3B8]">
             <div className="flex items-center justify-between border-b border-[#334155] pb-2 mb-2">
-              <span className="text-[#F8FAFC] font-semibold">LunchWeb.config.js</span>
+              <span className="text-[#F8FAFC] font-semibold">LaunchWeb.config.js</span>
               <span className="text-[10px] text-[#4ADE80]">✓ Verified Architecture</span>
             </div>
             <p><span className="text-[#818CF8]">export const</span> app = {'{'}</p>

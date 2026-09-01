@@ -29,7 +29,7 @@ export function ContactForm({ compact = false }) {
           Enquiry Received!
         </h3>
         <p className="text-sm leading-relaxed text-[#475569] max-w-sm mx-auto">
-          Thank you for contacting LunchWeb. Our team will review your business requirements and reply within 2 hours.
+          Thank you for contacting LaunchWeb. Our team will review your business requirements and reply within 2 hours.
         </p>
         <div className="pt-2">
           <a

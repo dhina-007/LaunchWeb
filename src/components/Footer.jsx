@@ -13,7 +13,7 @@ export function Footer() {
           <div className="md:col-span-5 space-y-4">
             <Logo size="md" />
             <p className="text-sm leading-relaxed text-[#475569] max-w-sm">
-              LunchWeb is a modern technology studio building websites, custom software, and digital solutions that help businesses build credibility and grow.
+              LaunchWeb is a modern technology studio building websites, custom software, and digital solutions that help businesses build credibility and grow.
             </p>
             <div className="flex items-center gap-2 pt-2 text-xs text-[#16A34A] font-semibold">
               <Shield className="h-4 w-4" />
@@ -112,7 +112,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#475569]">
-          <p>© 2026 LunchWeb. All rights reserved.</p>
+          <p>© 2026 LaunchWeb. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <span>Web Design</span>
             <span>•</span>

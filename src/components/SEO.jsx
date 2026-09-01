@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
 
 export function SEO({
-  title = 'LunchWeb | Web Design, Software & Digital Solutions',
-  description = 'LunchWeb builds modern websites, custom software and digital solutions that help businesses establish a stronger digital presence and grow online.',
+  title = 'LaunchWeb | Web Design, Software & Digital Solutions',
+  description = 'LaunchWeb builds modern websites, custom software and digital solutions that help businesses establish a stronger digital presence and grow online.',
   keywords = 'Web Design Company, Web Development Company, Website Development, Custom Software Development, Web Design Services, Software Development Services, Digital Solutions',
-  canonicalUrl = 'https://lunchweb.onrender.com/',
-  ogImage = 'https://lunchweb.onrender.com/logo.png',
+  canonicalUrl = 'https://launchweb.onrender.com/',
+  ogImage = 'https://launchweb.onrender.com/logo.png',
   schemaJson = null,
 }) {
   useEffect(() => {
