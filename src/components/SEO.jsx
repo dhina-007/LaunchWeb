@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
 
 export function SEO({
-  title = 'LaunchWeb | Web Design, Software & Digital Solutions',
-  description = 'LaunchWeb builds modern websites, custom software and digital solutions that help businesses establish a stronger digital presence and grow online.',
-  keywords = 'Web Design Company, Web Development Company, Website Development, Custom Software Development, Web Design Services, Software Development Services, Digital Solutions',
-  canonicalUrl = 'https://launchweb.onrender.com/',
-  ogImage = 'https://launchweb.onrender.com/logo.png',
+  title = 'Launch Web | Web Design, Custom Software & Digital Solutions',
+  description = 'Launch Web is a modern technology studio building high-speed websites, custom software applications, AI ads, and digital solutions to grow your business.',
+  keywords = 'Launch Web, LaunchWeb, Launch Web studio, Web Design Company, Web Development Company, Website Development, Custom Software Development, Video Editing, AI Ads, Business Website Development',
+  canonicalUrl = 'https://launchweb-kqa9.onrender.com/',
+  ogImage = 'https://launchweb-kqa9.onrender.com/logo.png',
   schemaJson = null,
 }) {
   useEffect(() => {

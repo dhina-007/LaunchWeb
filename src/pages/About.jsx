@@ -10,12 +10,12 @@ export function About() {
     '@type': 'AboutPage',
     name: 'About LaunchWeb',
     description: 'LaunchWeb is a digital solutions studio bridging modern UI design and full-stack software engineering.',
-    url: 'https://launchweb.onrender.com/about',
+    url: 'https://launchweb-kqa9.onrender.com/about',
     publisher: {
       '@type': 'Organization',
       name: 'LaunchWeb',
-      url: 'https://launchweb.onrender.com/',
-      logo: 'https://launchweb.onrender.com/logo.png',
+      url: 'https://launchweb-kqa9.onrender.com/',
+      logo: 'https://launchweb-kqa9.onrender.com/logo.png',
     },
   }
 
@@ -25,7 +25,7 @@ export function About() {
         title="About LaunchWeb | Technology &amp; Digital Solutions Studio"
         description="Learn how LaunchWeb bridges modern UI design and custom software engineering to build fast, responsive digital foundations for growing businesses."
         keywords="About LaunchWeb, Web design studio, Custom software studio, Tech solutions partner, Web engineering"
-        canonicalUrl="https://launchweb.onrender.com/about"
+        canonicalUrl="https://launchweb-kqa9.onrender.com/about"
         schemaJson={aboutSchema}
       />
 

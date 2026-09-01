@@ -11,17 +11,17 @@ export function Contact() {
     '@type': 'ContactPage',
     name: 'Contact LaunchWeb',
     description: 'Get in touch with LaunchWeb for custom web design, software development, and digital solutions.',
-    url: 'https://launchweb.onrender.com/contact',
+    url: 'https://launchweb-kqa9.onrender.com/contact',
     mainEntity: {
       '@type': 'ProfessionalService',
       name: 'LaunchWeb',
       telephone: '+919585523658',
       email: 'launchwebservice@gmail.com',
-      url: 'https://launchweb.onrender.com/',
+      url: 'https://launchweb-kqa9.onrender.com/',
       sameAs: [
         company.instagram,
         company.linkedin,
-        'https://launchweb.onrender.com/'
+        'https://launchweb-kqa9.onrender.com/'
       ]
     },
   }
@@ -32,7 +32,7 @@ export function Contact() {
         title="Contact LaunchWeb | Start Your Web &amp; Software Project"
         description="Contact LaunchWeb for web design, custom software development, or digital solution inquiries. Reach us by project form, phone, LinkedIn, Instagram or instant WhatsApp."
         keywords="Contact LaunchWeb, Web design inquiry, Hire web developers, Software development contact, Get project quote"
-        canonicalUrl="https://launchweb.onrender.com/contact"
+        canonicalUrl="https://launchweb-kqa9.onrender.com/contact"
         schemaJson={contactSchema}
       />
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://launchweb.onrender.com/sitemap.xml
+Sitemap: https://launchweb-kqa9.onrender.com/sitemap.xml

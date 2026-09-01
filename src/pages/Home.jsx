@@ -51,7 +51,7 @@ export function Home() {
         title="LaunchWeb | Web Design, Software & Digital Solutions"
         description="LaunchWeb builds modern websites, custom software and digital solutions that help businesses establish a stronger digital presence and grow online."
         keywords="Web Design Company, Web Development Company, Website Development, Custom Software Development, Web Design Services, Software Development Services, Digital Solutions, Custom Web Applications, Responsive Web Design"
-        canonicalUrl="https://launchweb.onrender.com/"
+        canonicalUrl="https://launchweb-kqa9.onrender.com/"
         schemaJson={faqSchema}
       />
 

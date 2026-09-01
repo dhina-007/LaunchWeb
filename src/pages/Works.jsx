@@ -29,7 +29,7 @@ export function Works() {
         '@type': 'CreativeWork',
         name: w.name,
         description: w.summary,
-        url: w.url || 'https://launchweb.onrender.com/works',
+        url: w.url || 'https://launchweb-kqa9.onrender.com/works',
         image: w.image,
       },
     })),
@@ -46,7 +46,7 @@ export function Works() {
         title="Selected Projects &amp; Case Studies | LaunchWeb"
         description="Explore real production websites, Sri Sai Clinic healthcare portal, LMS platforms, and custom software web applications designed and developed by LaunchWeb."
         keywords="Sri Sai Clinic website, LaunchWeb projects, Web development portfolio, React web apps, Custom software showcase"
-        canonicalUrl="https://launchweb.onrender.com/works"
+        canonicalUrl="https://launchweb-kqa9.onrender.com/works"
         schemaJson={worksSchema}
       />
 

@@ -14,7 +14,7 @@ export function Services() {
     provider: {
       '@type': 'ProfessionalService',
       name: 'LaunchWeb',
-      url: 'https://launchweb.onrender.com/',
+      url: 'https://launchweb-kqa9.onrender.com/',
     },
     areaServed: 'Worldwide',
     hasOfferCatalog: {
@@ -38,7 +38,7 @@ export function Services() {
         title="Web Design &amp; Development Services | LaunchWeb"
         description="LaunchWeb designs and develops modern, responsive websites, custom software, and digital solutions for businesses that want a stronger digital presence."
         keywords="Web Design Services, Custom Software Development, Business Website Development, Web Application Development, UI/UX Design, E-Commerce Solutions"
-        canonicalUrl="https://launchweb.onrender.com/services"
+        canonicalUrl="https://launchweb-kqa9.onrender.com/services"
         schemaJson={serviceSchema}
       />
 
